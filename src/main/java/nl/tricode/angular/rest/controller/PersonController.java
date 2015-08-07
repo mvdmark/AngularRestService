@@ -18,6 +18,11 @@ public class PersonController {
 		return initPersonList();
 	}
 
+	@RequestMapping("/hello")
+	public String getHello() {
+		return "Hello world!";
+	}
+
 	private List<Person> initPersonList() {
 		List<Person> persons = new ArrayList<>();
 
